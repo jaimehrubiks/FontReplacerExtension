@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "Never Sans",
+  "description": "This extension attempts to save humanity from hell replacing comic sans ms font with Arial. Very efficient, no CPU load.",
+  "version": "1.2",
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/functions.js","js/webload.js"],
+      "css": ["css/style.css"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "fontSettings"
+  ],
+
+  "icons": 
+    {   "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png" 
+    }
+
+}

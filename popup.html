@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!-- The jQuery library is a prerequisite for all jqSuite products -->
+    <script type="text/ecmascript" src="js/jquery.js"></script> 
+    <!-- This is the Javascript file of jqGrid -->   
+    <script type="text/ecmascript" src="js/jquery.jqGrid.js"></script>
+    <!-- This is the localization file of the grid controlling messages, labels, etc.-->
+    <script type="text/ecmascript" src="js/grid.locale-en.js"></script>
+    <!--<script type="text/ecmascript" src="js/bootstrap.min.js"></script>-->
+    <!-- A link to a jQuery UI ThemeRoller theme, more than 22 built-in and many more custom -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css" />
+    <!-- The link to the CSS that the grid needs -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ui.jqgrid.css" />
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />-->
+
+    <meta charset="utf-8" />
+    <title>Settings</title>
+
+    <style>
+        body{
+            width: 500px;
+        }
+        #jqGrid{
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Rules Editor</h1>
+    <p>Here you can edit your rules. <b>Press ENTER to save each rule</b></p>
+
+    <table id="jqGrid"></table>
+    <div id="jqGridPager"></div>
+
+    <button id="editButton" >EDIT MODE</button>
+    <button id="endEditButton">END EDIT MODE</button>
+    <button id="defaultsButton">LOAD DEFAULTS</button>
+    <button id="saveButton">SAVE</button>
+
+    <script type="text/ecmascript" src="js/functions.js"></script>
+    <script type="text/ecmascript" src="js/fonts.js"></script>
+    <script type="text/ecmascript" src="js/settings.js"></script>
+    <script type="text/ecmascript" src="js/jquery.confirm.min.js"></script>
+
+    
+</body>
+</html>
